@@ -1,0 +1,19 @@
+!/bin/bash
+
+# This will download all the files on the ICE ftp.
+# I recommend creating the ICE ftp site directory structure or something close adn 
+# doneloading Gas, Power, and Oil seperately.  Remember, ICE does not play well with others
+# so don't make them mad.
+
+cd /path/to/scrape/directory
+wget -nd -r -nc https://$user:$password@downloads.theice.com/ --no-check-certificate -R html,gif
+
+cd /path/to/scrape/directory/Gas
+wget -nd -r -nc https://$user:$password@downloads.theice.com/Settlement_Reports/Gas --no-check-certificate -R html,gif
+wget -nd -r -nc https://$user:$password@downloads.theice.com/Settlement_Reports_CSV/Gas --no-check-certificate -R html,gif
+cd /path/to/scrape/directory/Power
+wget -nd -r -nc https://$user:$password@downloads.theice.com/Settlement_Reports/Power --no-check-certificate -R html,gif
+wget -nd -r -nc https://$user:$password@downloads.theice.com/Settlement_Reports_CSV/Power --no-check-certificate -R html,gif
+cd /path/to/scrape/directory/Oil
+wget -nd -r -nc https://$user:$password@downloads.theice.com/Settlement_Reports/Oil --no-check-certificate -R html,gif
+wget -nd -r -nc https://$user:$password@downloads.theice.com/Settlement_Reports_CSV/Oil --no-check-certificate -R html,gif
