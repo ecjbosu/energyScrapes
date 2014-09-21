@@ -1,0 +1,8 @@
+WebScrappers project
+This project contains perl scripts to scrap data from various websites.
+
+Currently scrappers
+PJM RTO/ISO day ahead, real time price data
+NYMEX daily settles
+EIA NG and petroleum reports
+ICE settles
