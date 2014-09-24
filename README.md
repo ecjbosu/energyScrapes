@@ -7,8 +7,8 @@ This repository will include data scrapes for commoidty price data, primarily se
 
 Assistance with adding power iso, pipelines, and other energy data sources would be greatly appreciated.
  <ul>
-<li>Perl Scripts: can be added cron or other task schedular (require Date::BUsiness package on link shown below)/li><ul>
-<li>NYMEXwget.sh will download cme settle files (spreadsheet and xml) from ftp://ftp.cmegroup.com/pub/settle./li>
+<li>Perl Scripts: can be added cron or other task schedular (require Date::BUsiness package on link shown below)</li><ul>
+<li>NYMEXwget.sh will download cme settle files (spreadsheet and xml) from ftp://ftp.cmegroup.com/pub/settle.</li>
 <li>ICEwget.sh will downlaod the ICE end of day settle files, both spreadsheet and text delimited.  ICE requires a ftp login.</li></ul>
 <li>Other files:</li>
 <ul>
