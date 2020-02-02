@@ -4,8 +4,8 @@
 	use Date::Business;
 	$DLDIR="/Share/scrapes";
 	$ISO="MISO";
-	$wdir="RTFinalLMP";
-        $fn ="_rt_lmp_final.csv";
+	$wdir="DAExanteLMP";
+        $fn ="_da_exante_lmp.csv";
 	
 # 	@year = (2011..2019);
 # 	@qtr1 = qw/Jan Apr Jul Oct/;

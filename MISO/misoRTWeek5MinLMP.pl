@@ -4,8 +4,8 @@
 	use Date::Business;
 	$DLDIR="/Share/scrapes";
 	$ISO="MISO";
-	$wdir="RTFinalLMP";
-        $fn ="_rt_lmp_final.csv";
+	$wdir="RTWeek5Min";
+        $fn ="_5min_lmp.zip";
 	
 # 	@year = (2011..2019);
 # 	@qtr1 = qw/Jan Apr Jul Oct/;
@@ -28,7 +28,7 @@
 #testing
 #$PDIR="/test";
 #PJM
-	$filenum=20170101; #20160425
+	$filenum=20150105; #20160425
 	#day ahead are current day when this is executed after 12am
  	#$d->prev();         # previous calendar day
 	#$DATE=  $d->image(); # returns YYYYMMDD string
