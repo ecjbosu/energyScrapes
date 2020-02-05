@@ -6,6 +6,7 @@
 	$ISO="MISO";
 	$wdir="RTWeek5Min";
         $fn ="_5min_lmp.zip";
+        $fn1="_5MIN_LMP.zip";
 	
 # 	@year = (2011..2019);
 # 	@qtr1 = qw/Jan Apr Jul Oct/;
@@ -28,7 +29,7 @@
 #testing
 #$PDIR="/test";
 #PJM
-	$filenum=20150105; #20160425
+	$filenum=20171120; #20160425
 	#day ahead are current day when this is executed after 12am
  	#$d->prev();         # previous calendar day
 	#$DATE=  $d->image(); # returns YYYYMMDD string
@@ -40,6 +41,7 @@
              
              if ((substr($i, 6,2)<=31) and (substr($i,4,2)<=12) and (substr($i,4,2)>0)) {
               `wget -nH -N -X /cgi-bin $url${i}$fn -P $DLDIR/$ISO/$PDIR`;
+              `wget -nH -N -X /cgi-bin $url${i}$fn1 -P $DLDIR/$ISO/$PDIR`; #incase of typepo
              }
 #             `wget -nH -N -X /cgi-bin $url$i%5F$qtr1a[$j-1]-$qtr2a[$j-1]%5F$fn -P $DLDIR/$ISO/$PDIR`; #incase of typepo
              #`zip -9m $DLDIR/$ISO/$PDIR/${i}_$fn.zip $DLDIR/$ISO/$PDIR/${i}_$fn`;
